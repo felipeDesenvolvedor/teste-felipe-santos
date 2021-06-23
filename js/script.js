@@ -9,7 +9,8 @@ var Animacao = {
     indexCorAtual :0,
     alternarCorBox:() => {
         Animacao.botao.innerText = Animacao.botaoDesabilitado
-
+        Animacao.botao.disabled = true
+        
         Animacao.time = setInterval(() => {
 
             if(Animacao.indexCorAtual > Animacao.corHexa.length - 1) {
@@ -20,8 +21,7 @@ var Animacao = {
                 document.querySelector('.container').prepend(Animacao.boxCor)
                 return;
             }
-            
-            Animacao.botao.disabled = true
+    
             Animacao.boxCor.style.transform = "scale(1)"
 
             Animacao.boxCor.style.backgroundColor = Animacao.corHexa[Animacao.indexCorAtual]
