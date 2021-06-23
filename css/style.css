@@ -1,0 +1,28 @@
+.container {
+    border:solid 1px;
+    width:250px;
+    height:350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin:0 auto;
+}
+
+.box-cor {
+    width:200px;
+    height:200px;
+    background:red;
+    transform: scale(0);
+    transition:500ms transform;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.botao {
+    cursor:pointer;
+    width:150px;
+    height: 30px;
+}
